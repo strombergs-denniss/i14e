@@ -75,7 +75,7 @@ const translate = (keys, targetLang, sourceLang) => {
 const generateTranslationMap = async (keys, targetLang, sourceLang) => {
     const values = []
     const translationMap = {}
-    const BATCH_SIZE = CONFIG.DEEPL.BATCH_SIZE
+    const BATCH_SIZE = parseInt(CONFIG.DEEPL.BATCH_SIZE)
 
     for (let a = 0; a < Math.ceil(keys.length / BATCH_SIZE); ++a) {
         const batch = keys.slice(BATCH_SIZE * a, BATCH_SIZE * a + BATCH_SIZE)

@@ -38,7 +38,7 @@ const generateCmsPageIdentifierMap = (storeCode, targetLang, env) => {
             translationMap[key] = generateUrl(translationMap[key])
         }
 
-        fs.writeFileSync(path.join(__dirname, 'target', 'cms-page-identifiers.json'), JSON.stringify(translationMap))
+        fs.writeFileSync(path.join(__dirname, '../../output', targetLang, 'cms-page-identifiers.json'), JSON.stringify(translationMap))
     }, env)
 }
 

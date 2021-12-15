@@ -85,11 +85,11 @@ const generateCategoryNameMap = (storeCode, targetLang, env) => {
         }
     
         if (names) {
-            fs.writeFileSync(path.join(__dirname, 'target', 'category-names.json'), JSON.stringify(names))
+            fs.writeFileSync(path.join(__dirname, '../../output', targetLang, 'category-names.json'), JSON.stringify(names))
         }
 
         if (urlKeys) {
-            fs.writeFileSync(path.join(__dirname, 'target', 'category-url-keys.json'), JSON.stringify(urlKeys))
+            fs.writeFileSync(path.join(__dirname, '../../output', targetLang, 'category-url-keys.json'), JSON.stringify(urlKeys))
         }
     }, env)
 }

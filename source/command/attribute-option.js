@@ -36,7 +36,7 @@ const generateAttributeOptionMap = (storeCode, targetLang, env) => {
         const translationMap = await generateTranslationMap(keys, targetLang)
 
         if (translationMap) {
-            fs.writeFileSync(path.join(__dirname, 'target', 'attribute-options.json'), JSON.stringify(translationMap))
+            fs.writeFileSync(path.join(__dirname, '../../output', targetLang, 'attribute-options.json'), JSON.stringify(translationMap))
         }
     }, env)
 }
