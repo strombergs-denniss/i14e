@@ -9,14 +9,14 @@ This module is project specific.
     transync <input> <targetLang> --output
     Will synchronize 2 translation maps by taking keys from latest one and adding them to old one.
 
-    genmap:category-name <storeCode> <targetLang> --env'
+    genmap:category-name <storeCode> <targetLang> --env
     Will generate translation map of category names and category URL keys.
 
-    genmap:attribute-label <storeCode> <targetLang> --env'
+    genmap:attribute-label <storeCode> <targetLang> --env
     Will generate translation map of attribute labels.
 
-    genmap:attribute-option <storeCode> <targetLang> --env'
+    genmap:attribute-option <storeCode> <targetLang> --env
     WIll generate translation map of attribute option.
 
-    genmap:cms-page-identifier <storeCode> <targetLang> --env'
-    Will generate translation map of CMS page identifiers.
+    genmap:cms-page-identifier <storeCode> <targetLang> --env
+    Will generate translation map of CMS page identifiers
