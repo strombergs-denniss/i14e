@@ -1,0 +1,17 @@
+{
+    "name": "i14e",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.24.0",
+        "commander": "^8.3.0",
+        "dotenv": "^10.0.0",
+        "knex": "^0.95.14",
+        "qs": "^6.10.1",
+        "ssh2": "^1.5.0"
+    }
+}
