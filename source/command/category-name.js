@@ -38,6 +38,18 @@ const generateCategoryNameMap = (storeCode, targetLang, env) => {
             objects[row_id][attribute_code] = value
         }
 
+        for (const key in objects) {
+            const value = objects[key];
+            const { name, url_key } = value;
+
+            if (name && url_key) {
+                if (generateUrl(name) !== url_key) {
+                    console.log(name + ' | ' + url_key);
+                }
+            }
+        }
+
+        /*
         const keys = []
 
         for (const key in objects) {
@@ -91,6 +103,7 @@ const generateCategoryNameMap = (storeCode, targetLang, env) => {
         if (urlKeys) {
             fs.writeFileSync(path.join(__dirname, '../../output', targetLang, 'category-url-keys.json'), JSON.stringify(urlKeys))
         }
+        */
     }, env)
 }
 

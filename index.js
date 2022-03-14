@@ -4,11 +4,12 @@ const generateAttributeLabelMap = require('./source/command/attribute-label')
 const generateAttributeOptionMap = require('./source/command/attribute-option')
 const generateCategoryNameMap = require('./source/command/category-name')
 const generateCmsPageIdentifierMap = require('./source/command/cms-page-identifier')
+const transync = require('./source/command/transync')
 
 program
-    .command('transync')
-    .action(() => {
-        console.log('transync')
+    .command('transync <input> <targetLang>')
+    .action((input, targetLang) => {
+        transync(input, targetLang)
     })
 
 program
